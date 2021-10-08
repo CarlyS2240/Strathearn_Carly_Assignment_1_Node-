@@ -30,6 +30,16 @@ app.get('/api/Facts-About-Me', (req, res) => {
     res.send(JSON.stringify(factsAboutMe));
 });
 
+//Creating the second API route, this one returns 10 facts about Tokyo. 
+app.get('/api/Facts-About-Tokyo', (req, res) => {
+
+    //Defining 10 facts about Tokyo.
+    const factsAboutTokyo = ["Tokyo is the largest city in the world", "There is one vending machine per 23 citizens", "Tokyo is one of the safest cities worldwide", "Tokyo was originally named Edo", "Tokyo Skytree is one of the world’s tallest buildings", "Shibuya Crossing is the world’s busiest intersection", "You can see Mount Fuji from Tokyo on a clear day", "You can go real-life Mario karting in Tokyo", "The Park Hyatt Tokyo is widely recognized for its role in the Academy Award-winning drama Lost in Translation", "Tokyo has the highest number of neon signs in the world"];
+    
+    //Returning the 10 facts about Tokyo as strings.
+    res.send(JSON.stringify(factsAboutTokyo));
+});
+
 //Here we are running the 'express' server on the port that we specified above. 
 app.listen(port, () => {
     console.log("Listening on port", port);
