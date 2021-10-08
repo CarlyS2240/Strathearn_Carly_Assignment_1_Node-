@@ -18,6 +18,8 @@ app.get('/', (req, res) => {
     res.send("ITEC4012 Web Application Frameworks | Assignment 1: Node | Carly Strathearn");
 });
 
+//!-----------Created two Api routes, (1) returns 10 facts about me and (2) returns 10 facts about Tokyo-----------!
+
 //Creating the first API route, this one returns 10 facts about me. 
 app.get('/api/Facts-About-Me', (req, res) => {
 
